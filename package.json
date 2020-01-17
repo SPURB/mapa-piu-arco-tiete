@@ -1,0 +1,58 @@
+{
+	"name": "mapa-consulta-arco-tiete",
+	"version": "1.0.0",
+	"description": "Mapa interativo da consulta pública do Projeto de Intervenção Urbana Arco Tiete.",
+	"private": true,
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/SPURB/mapa-consulta-arco-tiete"
+	},
+	"bugs": "https://github.com/SPURB/mapa-consulta-arco-tiete",
+	"author": {
+		"name": "São Paulo Urbanismo",
+		"email": "desenvolvimento@spurbanismo.sp.gov.br"
+	},
+	"contributors": [
+		{
+			"name": "Thomas Yuba",
+			"email": "yubathom@gmail.com"
+		},
+		{
+			"name": "Davi Hosogiri",
+			"email": "hosogiri.davi@gmail.com"
+		},
+		{
+			"name": "Renan Gomes",
+			"email": "renan.smul@gmail.com"
+		}
+	],
+	"husky": {
+		"hooks": {
+			"commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+		}
+	},
+	"scripts": {
+		"start": "parcel ./index.html",
+		"watch": "parcel watch ./index.html",
+		"build": "parcel build --public-url . index.html",
+		"files": "node data-src/start.js"
+	},
+	"devDependencies": {
+		"babel-preset-env": "1.7.0",
+		"babel-register": "6.26.0",
+		"directory-tree": "2.2.3",
+		"document-ready": "2.0.2",
+		"dotenv": "^8.2.0",
+		"fs-extra": "8.1.0",
+		"get-sheet-done": "0.1.5",
+		"husky": "^4.0.10",
+		"node-fetch": "2.6.0",
+		"node-sass": "4.12.0",
+		"ol": "5.3.3",
+		"parcel-bundler": "1.12.3"
+	},
+	"dependencies": {
+		"@spurb/fechadura": "^1.0.1",
+		"axios": "0.19.0"
+	}
+}
