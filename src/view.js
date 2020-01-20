@@ -47,16 +47,20 @@ docReady(() => {
 	let state = {
 		projectSelected: false, // project clicked at map or right sidebar?
 		mapSelected: false,
-		idConsulta: 62, // id_consulta
+		idConsulta: 63, // id_consulta
 		consultaFetch: false, // the Consultas table data from fetch. This is setted by addCommentBox after first load
 		baseLayerObj: { id: 0, indicador: 'A1' }, // project main layer id,
-		baseLayerObjects: [], // other bases. ex. -> {id: 202, indicador: 'A34'},
+		baseLayerObjects: [ { id: 100, indicador: 'A2' }, { id: 101, indicador: 'A3' }, { id: 102, indicador: 'A4' } ], // other bases. ex. -> {id: 202, indicador: 'A34'},
 		bing: true,
 		appUrl: process.env.APP_URL
 	}
 
 	const baseInfos = createBaseInfos(projetos, state.baseLayerObj.id, state.baseLayerObjects)
-	const baseLayers = returnBases({ info: baseInfos.info, id: state.baseLayerObj.id, indicador: state.baseLayerObj.indicador }, baseInfos.infos, state.appUrl, cores, state.bing ) // open layer's BASE's layers
+	const baseLayers = returnBases({
+		info: baseInfos.info,
+		id: state.baseLayerObj.id,
+		indicador: state.baseLayerObj.indicador
+	}, baseInfos.infos, state.appUrl, cores, state.bing ) // open layer's BASE's layers
 	const baseLayer = baseLayers.find(layer => layer.values_.projectIndicador === state.baseLayerObj.indicador)
 	const simplesLayers = returnSimples(projetos, simples, state.appUrl, cores)
 

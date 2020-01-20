@@ -52,8 +52,7 @@ function returnBases(projeto, otherProjetos, app_url, idColors, bing){
 		if(file.extension === '.kml'){
 			kmlLayers.unshift({
 				layer: setLayer(file, path, projeto, {
-					// lineDash: [5],
-					width: 1.5,
+					width: 1,
 					color: color
 				})
 			})
@@ -71,7 +70,7 @@ function returnBases(projeto, otherProjetos, app_url, idColors, bing){
 					kmlLayers.unshift({
 						layer: setLayer(file, url, projeto, {
 							color: color,
-							width: 0.1
+							width: 0.5
 						})
 					})
 				}
