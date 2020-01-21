@@ -1,4 +1,4 @@
-# Mapa PIU Arco Tietê
+# Mapa PIU Arco Tietê [![Build Status](https://travis-ci.org/spurb/mapa-piu-arco-tiete.svg?branch=master)](https://travis-ci.org/spurb/mapa-piu-arco-tiete)
 Mapa interativo da consulta pública do Projeto de Intervenção Urbana Arco Tietê
 
 ## Pré-requisitos para desenvolvimento. 
@@ -11,7 +11,7 @@ São necessárias as seguintes instalações globais para iniciar o desenvolvime
 1. Clone o repositório e instale as dependências do projeto.
 ```bash
 # clone este repositório
-git clone https://github.com/SPURB/mapa-consulta-arco-tiete.git
+git clone https://github.com/spurb/mapa-consulta-arco-tiete.git
 
 cd mapa-consulta-arco-tiete
 
@@ -68,7 +68,7 @@ Para que os dados da aplicação funcionem será necessário publicar a planilha
 
 
 ## Documentação de bugs
-Toda contribuição é bem vinda. Crie uma [issue](https://github.com/SPURB/piu-arco-tiete/issues).
+Toda contribuição é bem vinda. Crie uma [issue](https://github.com/spurb/piu-arco-tiete/issues).
 
 ## Licença
-[GNU General Public License v3.0](https://github.com/SPURB/piu-arco-tiete/blob/master/LICENSE).
+[GNU General Public License v3.0](https://github.com/spurb/piu-arco-tiete/blob/master/LICENSE).
