@@ -47,7 +47,7 @@ docReady(() => {
 	let state = {
 		projectSelected: false, // project clicked at map or right sidebar?
 		mapSelected: false,
-		idConsulta: 63, // id_consulta
+		idConsulta: 64, // id_consulta
 		consultaFetch: false, // the Consultas table data from fetch. This is setted by addCommentBox after first load
 		baseLayerObj: { id: 0, indicador: 'A1' }, // project main layer id,
 		baseLayerObjects: [ { id: 100, indicador: 'A2' }, { id: 101, indicador: 'A3' }, { id: 102, indicador: 'A4' } ], // other bases. ex. -> {id: 202, indicador: 'A34'},

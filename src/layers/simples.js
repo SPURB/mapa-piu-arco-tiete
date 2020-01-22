@@ -26,7 +26,7 @@ function returnSimples (projetos, simples, app_url, cores) {
 	const dashedLayers = [ 'A2', 'A3', 'A4', 'A10', 'A21' , 'A15' ]
 	const bigDots 	   = [ 'A12' ]
 	const filledLayers = [ 'A11', 'A16' ]
-	const biggerWidths = [ 'A7', 'A9' ]
+	const biggerWidths = [ 'A7', 'A9', 'A9B' ]
 	const twoStrokes   = [ 
 		{ indicador: 'A5', type: 'butt'},
 		{ indicador: 'A6', type: 'butt'},
