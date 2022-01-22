@@ -46,7 +46,7 @@
 		"fs-extra": "8.1.0",
 		"get-sheet-done": "0.1.5",
 		"husky": "^4.0.10",
-		"node-fetch": "2.6.0",
+		"node-fetch": "3.1.1",
 		"node-sass": "^4.13.1",
 		"ol": "5.3.3",
 		"parcel-bundler": "^1.12.4"
